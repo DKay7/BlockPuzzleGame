@@ -23,7 +23,7 @@ boolean update_map = false;
 boolean update_map_generating_text = true;
 String getMap() {
   try {
-    Process process = Runtime.getRuntime().exec("/home/danny/programmings/BlocksPuzzle/sketch_230516d/generate-initial-map");
+    Process process = Runtime.getRuntime().exec("/home/danny/programmings/BlockPuzzleGame/processing_front/generate-initial-map");
     BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
     return reader.readLine();
   } catch(Exception exc) {
